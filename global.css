@@ -6,7 +6,43 @@
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Global Variables
+ * 4. Import Local Fonts
  */
+
+ @font-face{
+    font-family: alegrevaBold;
+    src: url(./assets/fonts/Alegreya/Alegreya-Bold.ttf) format("truetype");
+ }
+
+ @font-face{
+  font-family: alegrevaSemibold;
+  src: url(./assets/fonts/Alegreya/Alegreya-SemiBold.ttf) format("truetype");
+}
+
+ @font-face{
+  font-family: alegrevaRegular;
+  src: url(./assets/fonts/Alegreya/Alegreya-Regular.ttf) format("truetype");
+}
+
+@font-face{
+  font-family: montserratBold;
+  src: url(./assets/fonts/MontSerrat/Montserrat-Bold.ttf) format("truetype");
+}
+@font-face{
+  font-family: montserratRegular;
+  src: url(./assets/fonts/MontSerrat/Montserrat-Regular.ttf) format("truetype");
+}
+@font-face{
+  font-family: montserratSemibold;
+  src: url(./assets/fonts/MontSerrat/MontSerrat-SemiBold.ttf) format("truetype");
+}
+
+ :root {
+  --bg-color: #4B6CDB;
+  --nav-color: #984deb;
+  --text-color: #fff;
+}
 
  html {
   line-height: 1.15; /* 1 */
