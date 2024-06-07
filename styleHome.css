@@ -1,19 +1,19 @@
-body{
-  /* background-color: #0a0509; */
-}
 
+body{
+  font-family: montserratRegular, serif;
+}
 
 nav{
   padding: 30px 50px;
-  background-color: #984deb;
+  background-color: var(--nav-color);
   height: auto;
+
 
 }
 nav > a{
   text-decoration: none;
-  font-size: 24px;
-  font-family: 'sans-serif';
-  font-weight: 800;
+  font-size: 40px;
+  font-family: alegrevaBold, serif;
   color: #f7f1fe;
 }
 
@@ -27,11 +27,13 @@ nav > a{
 }
 .horizontalNav li {
   float: right;
-  padding: 0 10px;
+  padding: 18px 10px;
 
   & > a {
     text-decoration: none;
     color: #f7f1fe;
+    font-family: montserratBold, serif;
+    /* text-align: justify; */
   }
 }
 
