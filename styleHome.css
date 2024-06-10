@@ -90,13 +90,13 @@ main .title {
   width: 60%;
   height: auto;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 140px 0;
 }
 
 .firstStepsArea{
   background-color: var(--black);
   color: var(--white);
-  padding: 40px 0;
+  padding: 240px 0;
 
   & > span {
     display: block;
