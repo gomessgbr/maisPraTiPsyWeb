@@ -90,13 +90,17 @@ main .title {
   width: 60%;
   height: auto;
   margin: 0 auto;
-  padding: 140px 0;
+  padding: 80px 0;
 }
 
-.firstStepsArea{
+.therapyArea > p > strong{
+  font-family: montserratBold;
+}
+
+.typesTheraphyArea{
   background-color: var(--black);
   color: var(--white);
-  padding: 240px 0;
+  padding: 80px 0;
 
   & > span {
     display: block;
@@ -107,12 +111,40 @@ main .title {
   }
 }
 
-.firstStepsArea  p {
+.typesTheraphyArea  ul {
   display: block;
   width: 60%;
   margin: 0 auto;
   align-text: center;
+  padding-top: 30px;
+  list-style: none;
+
+  & > li {
+    border-top: 1px solid var( --secondary);
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+  }
 }
+
+.accordion{
+  all: unset;
+  width: 100%;
+  margin: 0 auto;
+  font-family: montserratBold;
+  cursor: pointer;
+}
+
+
+.typesTheraphyArea ul li > .panel{
+  font-family: montserratRegular;
+  display: none;
+}
+ .icon{
+  float: right;
+}
+
+
 
 
 
