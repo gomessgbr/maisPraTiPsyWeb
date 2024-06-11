@@ -120,8 +120,8 @@ main .title {
   list-style: none;
 
   & > li {
-    border-top: 1px solid var( --secondary);
-    padding: 10px;
+    border-top: 1px solid var( --primary);
+    padding: 20px 10px;
     position: relative;
     overflow: hidden;
   }
@@ -136,9 +136,12 @@ main .title {
 }
 
 
-.typesTheraphyArea ul li > .panel{
+.panelAccord{
   font-family: montserratRegular;
   display: none;
+  text-align: left;
+  padding: 10px;
+  color: var(--white)
 }
  .icon{
   float: right;
