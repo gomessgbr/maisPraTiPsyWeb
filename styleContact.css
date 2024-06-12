@@ -1,3 +1,104 @@
-form{
+
+body{
+  font-family: montserratRegular, arial;
+}
+
+nav{
+  padding: 30px 50px;
+  background-color: var(--black);
+  height: auto;
+}
+nav > a{
+  text-decoration: none;
+  font-size: 40px;
+  font-family: alegrevaBold, serif;
+  color: var(--primary);
+}
+
+.horizontalNav{
+  float: inline-end;
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin:0;
+
+}
+.horizontalNav li {
+  float: left;
+  padding: 18px 10px;
+
+  & > a {
+    text-decoration: none;
+    color: var(--primary);
+    font-family: montserratBold, serif;
+  }
+}
+
+.horizontalNav li a:hover{
+  color: var(--acent);
+}
+
+
+
+.contantForm{
+  height: 80dvh;
+  width: 25dvw;
+  margin: 0 auto;
+  white-space: wrap;
+  padding-top: 20px;
+}
+
+.contantForm > label{
   
+}
+
+.contantForm > label > p{
+  font-family: montserratBold;
+  font-size: 18px;
+}
+.contantForm > label > input[type=text], input[type=email],textarea{
+  width: 100%;
+}
+
+.contantForm > label input[type=text], input[type=email]{
+  padding: 10px;
+  border-radius: 8px;
+  font-family: montserratRegular;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contantForm > label > textarea{
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+
+.contactSubmit{
+  margin: 20px 0 0 85%;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: var(--acent);
+  color: var(--primary);
+  border-radius: 10px;
+  border: none;
+}
+
+.contactSubmit:hover{
+  background-color: var(--black);
+}
+
+footer{
+  border-top: 0.5px solid #000;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p{
+  padding: 10px 40px;
+ & > a{
+    color: var(--black);
+ }
 }

@@ -13,3 +13,35 @@ for(let i = 0; i < accordion.length; i++){
   })
 
 }
+
+// -----------------------------  form Setup
+
+
+let formElement = document.getElementById('contactForm');
+const inputName = document.getElementById('inputName');
+const inputEmail = document.getElementById('inputEmail');
+const textAreaMessage = document.getElementById('textAreaMessage');
+
+
+formElement.addEventListener('submit', (event)=>{
+  event.preventDefault();
+  new FormData(formElement);
+})
+
+
+inputName.addEventListener('invalid',(e)=>{
+  inputName.style.borderColor= '#FF5757';
+
+})
+
+inputEmail.addEventListener('invalid',(e)=>{
+  inputEmail.style.borderColor= '#FF5757';
+})
+
+formElement.addEventListener('formdata',(e)=>{
+  let data = e.formData;
+  let nameInputData = data.get('fieldName')
+  alert(`Sua mensagem foi enviado ${nameInputData}!`);
+  formElement.reset();
+
+})
