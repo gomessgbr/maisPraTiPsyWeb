@@ -68,7 +68,7 @@ nav > a{
     padding: 10px;
     border-radius: 8px;
 
-    
+
   }
 }
 
@@ -154,14 +154,12 @@ main .title {
 
 footer{
   border-top: 0.5px solid #000;
-  /* position: absolute; */
   bottom: 0;
   width: 100%;
 }
 
 footer p{
   padding: 10px 40px;
-  /* text-align: center; */
  & > a{
     color: var(--black);
  }
