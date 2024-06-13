@@ -127,13 +127,28 @@ nav > a{
 }
 
 .aboutMeContainer{
-  padding: 40px 0 10px 0;
+  padding: 10px 0 10px 0;
   font-weight: 500;
 }
 
 
+.resumeArea{
+  padding: 0 0 10px 0;
 
-.aboutMeContainer > a {
+ 
+}
+
+.contactArea{
+  text-align: end;
+  padding: 0 0 10px 0;
+
+  & > p{
+    margin-top: 30px;
+    padding-right:10px;
+  }
+}
+
+.contactArea > a {
   border: 1px solid var(--black);
   text-decoration: none;
   background-color: #34af23;
@@ -141,6 +156,7 @@ nav > a{
   padding: 1em;
   border-radius: 16px;
   color: var(--white);
+
 }
 
 footer{
