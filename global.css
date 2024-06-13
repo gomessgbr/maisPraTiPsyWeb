@@ -39,9 +39,11 @@
 }
 
  :root {
-  --bg-color: #4B6CDB;
-  --nav-color: #984deb;
-  --text-color: #fff;
+  --white: #FCFCF5;
+  --black: #101004;
+  --primary: #f8f525;
+  --secondary: #85e7f0;
+  --acent: #5c78ea;
 }
 
  html {
