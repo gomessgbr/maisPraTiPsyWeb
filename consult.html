@@ -4,24 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="styleConsult.css">
   <title>Consultas</title>
 </head>
 <body>
-  <div>
-    <h1>Tipos de consultas disponíveis</h1>
-    <section>
-      <p>TCC</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iusto aspernatur, veritatis amet officiis optio similique ad quaerat excepturi esse voluptates expedita reprehenderit porro nemo molestiae maiores eum eveniet dignissimos?
-      Aspernatur ab ullam dolorum tempore aut voluptatem deserunt iste magni voluptates at obcaecati, et numquam iure eligendi, molestias beatae sunt deleniti suscipit praesentium cumque cum officia excepturi cupiditate! Officiis, distinctio.
-      Consequatur magni, ab expedita veniam voluptate laborum sed! Esse dicta consectetur aspernatur provident fugit recusandae nostrum aliquid expedita laboriosam. Hic ad odio provident, earum vitae voluptatibus quas aperiam natus ut?</p>
-    </section>
-
-    <section>
-      <p>Psicalnalise</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sequi iusto suscipit, illum id incidunt enim quam provident optio, aut eos aliquid quasi non ipsum fugit voluptas modi? Distinctio, incidunt!
-      Numquam, unde. Quae assumenda deserunt adipisci consectetur explicabo! Ipsam molestiae ratione facilis asperiores sed animi aspernatur? Consequatur saepe accusamus officiis maiores, expedita veritatis officia soluta porro delectus nesciunt, error quam.
-      Ut aliquid, at tenetur, mollitia hic ipsam assumenda blanditiis eligendi in quisquam voluptatem officia voluptas molestias et obcaecati doloremque, fugiat perspiciatis pariatur atque dolore error nisi earum vitae nemo. Tempore.</p>
-    </section>
+  <header>
+    <nav>
+      <a href="index.html">PsyWeb</a>
+      <ul class="horizontalNav">
+        <li><a href="./consult.html">Encontre um psicologo</a></li>
+        <li><a href="./contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="containerConsult">
+    <form action="" class="formSearchPro">
+        <label class="labelSearch">
+          <p>Digite o nome do profissional:</p>
+          <input type="search" name="" id="" class="inputSearch">
+        </label>
+        <button type="submit" class="searchButton">buscar</button>
+    </form>
+    <div class="cardsContainer">
+      <div class="card">
+        <div class="personalInfos">
+          <img src="./assets/images/beatriz-santos.jpg"  alt="">
+          <div class="infosArea">
+            <div>
+              <span>Ana Silva</span>
+              <span>CRP :07/654321</span>
+            </div>
+            <p><strong>Abordagem :</strong> Terapia Cognitivo-Comportamental - TCC</p>
+          </div>
+        </div>
+        <div class="aboutMeContainer">
+          <strong>Sobre mim :</strong>
+          <p>Psicóloga com 10 anos de experiência em terapia cognitivo-comportamental, especializada em tratamento de ansiedade e depressão.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511975950915&text=Olá! Gostaria de fazer terapia com você!" target="_blank">Quero me consultar</a>
+          <p>Telefone: (11) 97595-0915</p>
+        </div>
+      </div>
+    </div>
   </div>
+  <footer>
+    <p>Coded by <a href="https://github.com/gomessgbr" target="_blank">Gabriel Gomes</a>.</p>
+  </footer>
 </body>
 </html>

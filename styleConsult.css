@@ -1,0 +1,158 @@
+nav{
+  padding: 30px 50px;
+  background-color: var(--black);
+  height: auto;
+}
+nav > a{
+  text-decoration: none;
+  font-size: 40px;
+  font-family: alegrevaBold, serif;
+  color: var(--primary);
+}
+
+.horizontalNav{
+  float: inline-end;
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin:0;
+
+}
+.horizontalNav li {
+  float: left;
+  padding: 18px 10px;
+
+  & > a {
+    text-decoration: none;
+    color: var(--primary);
+    font-family: montserratBold, serif;
+  }
+}
+
+.horizontalNav li a:hover{
+  color: var(--acent);
+}
+
+
+
+.formSearchPro{
+  background-color: var(--primary);
+  padding: 80px 0;
+  text-align: center;
+
+}
+
+
+.labelSearch{
+  width: max-content;
+   & > p{
+    font-family: montserratBold;
+    font-size: 18px;
+
+   }
+}
+.inputSearch{
+  min-width: 30%;
+  padding: 15px 10px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 1px 1px 5px var(--black);
+  font-family: montserratRegular;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.searchButton{
+  padding: 1em;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--acent);
+  color: var(--white);
+
+  font-family: montserratSemibold;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+.searchButton:hover{
+  background-color: var(--black);
+}
+
+
+.cardsContainer{
+  max-width: 1024px;
+  margin: auto;
+}
+
+.card{
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .25);
+  border-radius: 25px;
+  padding: 36px;
+  margin: 40px 0;
+  font-family: montserratRegular;
+}
+
+.personalInfos{
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  & > img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.infosArea{
+  display: block;
+  float: right;
+  padding: 50px 0;
+  text-align: start;
+  width: 75%;
+}
+
+.infosArea > div span:first-child{
+  font-family: montserratBold;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.infosArea > div span:last-child{
+  font-family: montserratSemibold;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 60%;
+}
+
+.aboutMeContainer{
+  padding: 40px 0 10px 0;
+  font-weight: 500;
+}
+
+
+
+.aboutMeContainer > a {
+  border: 1px solid var(--black);
+  text-decoration: none;
+  background-color: #34af23;
+  font-family: montserratBold;
+  padding: 1em;
+  border-radius: 16px;
+  color: var(--white);
+}
+
+footer{
+  border-top: 0.5px solid #000;
+  bottom: 0;
+  width: 100%;
+  font-family: alegrevaBold;
+}
+
+footer p{
+  padding: 10px 40px;
+ & > a{
+    color: var(--black);
+ }
+}
