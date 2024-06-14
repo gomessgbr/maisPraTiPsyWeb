@@ -33,11 +33,44 @@ const psychologyProfessionals  = [
   }
 ];
 
+let data = psychologyProfessionals;
+
 
 document.addEventListener('DOMContentLoaded',() => {
+  renderCards(data);
+
+  let searchForm = document.getElementById('searchForm');
+  let searchInput = document.getElementById('searchInput');
+
+  searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formatedInputValue = searchInput.value.toLowerCase();
+    let filteredData;
+        if (formatedInputValue === '') {
+            filteredData = psychologyProfessionals; 
+        } else {
+            filteredData = data.filter(({ name }) => name.toLowerCase().includes(formatedInputValue));
+        }
+        renderCards(filteredData);
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    const formatedInputValue = e.target.value.toLowerCase();
+    let filteredData;
+    if (formatedInputValue === '') {
+        filteredData = psychologyProfessionals;
+    } else {
+        filteredData = data.filter(({ name }) => name.toLowerCase().includes(formatedInputValue));
+    }
+    renderCards(filteredData);
+  });
+});
+
+
+function renderCards(data){
   let cardsContainer = document.getElementById('cardsContainer');
   let cardsHTML = '';
-  psychologyProfessionals.forEach(pro => {
+  data.forEach(pro => {
     cardsHTML +=`
       <div class="card">
         <div class="personalInfos">
@@ -64,4 +97,5 @@ document.addEventListener('DOMContentLoaded',() => {
     `;
   });
   cardsContainer.innerHTML = cardsHTML;
-});
+}
+
