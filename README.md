@@ -4,11 +4,14 @@ Site desenvolvimento para uso de profisionais de psicologia
 
 ## Overview
  - Visualização de informações sobre o psicologos
- - Formulário de contato
+ - Busca por nome
+ - Informações sobre terapia online
  - Informações sobre o tipo de abordagem do psicologo
 
 
 ## ScreenShots
+
+![preview](./assets/images/preview.png)
 
 ## Build With
 - HTML5
