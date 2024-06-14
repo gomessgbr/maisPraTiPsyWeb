@@ -32,3 +32,36 @@ const psychologyProfessionals  = [
     profilePicture: "./assets/images/joao-almeida.jpg"
   }
 ];
+
+
+document.addEventListener('DOMContentLoaded',() => {
+  let cardsContainer = document.getElementById('cardsContainer');
+  let cardsHTML = '';
+  psychologyProfessionals.forEach(pro => {
+    cardsHTML +=`
+      <div class="card">
+        <div class="personalInfos">
+          <img src=${pro.profilePicture}  alt="">
+          <div class="infosArea">
+            <div>
+              <span>${pro.name}</span>
+              <span>CRP:${pro.CRP}</span>
+            </div>
+            <p><strong>Abordagem :</strong> ${pro.approach}</p>
+          </div>
+        </div>
+        <div class="aboutMeContainer">
+          <strong>Sobre mim :</strong>
+          <div class="resumeArea">
+            <p>${pro.aboutMe}</p>
+          </div>
+          <div class="contactArea">
+            <a href="https://api.whatsapp.com/send?phone=5511975950915&text=Olá! Gostaria de fazer terapia com você!" target="_blank">Quero me consultar</a>
+            <p>Telefone: ${pro.contact}</p>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+  cardsContainer.innerHTML = cardsHTML;
+});

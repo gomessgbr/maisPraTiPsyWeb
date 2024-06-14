@@ -18,40 +18,19 @@
     </nav>
   </header>
   <div class="containerConsult">
-    <form action="" class="formSearchPro">
+    <form id="searchForm" class="formSearchPro">
         <label class="labelSearch">
           <p>Digite o nome do profissional:</p>
           <input type="search" name="" id="" class="inputSearch">
         </label>
-        <button type="submit" class="searchButton">buscar</button>
+        <button type="submit" class="searchButton" form="searchForm">buscar</button>
     </form>
-    <div class="cardsContainer">
-      <div class="card">
-        <div class="personalInfos">
-          <img src="./assets/images/beatriz-santos.jpg"  alt="">
-          <div class="infosArea">
-            <div>
-              <span>Ana Silva</span>
-              <span>CRP :07/654321</span>
-            </div>
-            <p><strong>Abordagem :</strong> Terapia Cognitivo-Comportamental - TCC</p>
-          </div>
-        </div>
-        <div class="aboutMeContainer">
-          <strong>Sobre mim :</strong>
-          <div class="resumeArea">
-            <p>Psicóloga com 10 anos de experiência em terapia cognitivo-comportamental, especializada em tratamento de ansiedade e depressão.</p>
-          </div>
-          <div class="contactArea">
-            <a href="https://api.whatsapp.com/send?phone=5511975950915&text=Olá! Gostaria de fazer terapia com você!" target="_blank">Quero me consultar</a>
-            <p>Telefone: (11) 97595-0915</p>
-          </div>
-        </div>
-      </div>
+    <div class="cardsContainer" id="cardsContainer">
     </div>
   </div>
   <footer>
     <p>Coded by <a href="https://github.com/gomessgbr" target="_blank">Gabriel Gomes</a>.</p>
   </footer>
+  <script src="profissionals.js"></script>
 </body>
 </html>
