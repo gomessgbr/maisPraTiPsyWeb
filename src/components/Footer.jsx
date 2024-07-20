@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="bg-white font-alegreyaBold flex flex-1 py-10 px-8">
       <p>
         Coded by{" "}
-        <a href="https://github.com/gomessgbr" target="_blank">
+        <a href="https://github.com/gomessgbr" target="_blank" className="underline">
           Gabriel Gomes
         </a>
         .
