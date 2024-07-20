@@ -14,6 +14,13 @@ export default {
         montserratBold: ['montserratBold', 'sans-serif'],
         montserratSemibold: ['montserratSemibold', 'sans-serif'],
       },
+      colors:{
+        black: '#101004',
+        white: '#FCFCF5',
+        primary: '#f8f525',
+        secondary: '#85e7f0',
+        accent: '#5c78ea'
+      }
     },
   },
   plugins: [],
