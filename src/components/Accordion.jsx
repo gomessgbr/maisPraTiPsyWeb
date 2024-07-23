@@ -1,6 +1,6 @@
 import { useState } from "react";
-import chevronUp from '../../public/images/chevron-up.svg'
-import chevronDown from '../../public/images/chevron-down.svg'
+import chevronUp from '/images/chevron-up.svg'
+import chevronDown from '/images/chevron-down.svg'
 
 export function Accordion({ title, description }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +10,9 @@ export function Accordion({ title, description }) {
   };
   return (
     <>
-      <div className="items-center border-y border-primary ">
+      <div className="border-y border-primary max-w-5xl ">
         <button
-          className=" flex items-center w-full p-8 font-semibold text-left rounded-t-md transition-all ease-in-out focus:outline-none"
+          className=" flex items-center w-full p-4 font-semibold text-left rounded-t-md transition-all ease-in-out focus:outline-none"
           onClick={toggleAccordion}
         >
           <span className="text-white font-montserratBold">{title}</span>
@@ -22,8 +22,8 @@ export function Accordion({ title, description }) {
           />
         </button>
         <div
-          className={` p-2.5 overflow-hidden transition-max-height duration-300 ease-in-out ${
-            isOpen ? "max-h-screen" : "max-h-0"
+          className={`p-2.5 overflow-hidden transition-max-height duration-300 ease-in-out ${
+            isOpen ? "grid" : "hidden"
           }`}
         >
           <div className="p-4 text-sm leading-normal text-white font-montserrat">

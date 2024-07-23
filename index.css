@@ -5,7 +5,7 @@
 @layer base {
   @font-face{
     font-family: alegrevaBold;
-    src: url(./public/fonts/Alegreya/Alegreya-Bold.ttf) format("truetype");
+    src: url(./fonts/Alegreya/Alegreya-Bold.ttf) format("truetype");
   }
 
   @font-face{
@@ -15,20 +15,20 @@
 
   @font-face{
     font-family: alegrevaRegular;
-    src: url(./public/fonts/Alegreya/Alegreya-Regular.ttf) format("truetype");
+    src: url(./fonts/Alegreya/Alegreya-Regular.ttf) format("truetype");
   }
 
   @font-face{
     font-family: montserratBold;
-    src: url(./public/fonts/MontSerrat/Montserrat-Bold.ttf) format("truetype");
+    src: url(./fonts/MontSerrat/Montserrat-Bold.ttf) format("truetype");
   }
   @font-face{
     font-family: montserratRegular;
-    src: url(./public/fonts/MontSerrat/Montserrat-Regular.ttf) format("truetype");
+    src: url(./fonts/MontSerrat/Montserrat-Regular.ttf) format("truetype");
   }
   @font-face{
     font-family: montserratSemibold;
-    src: url(./public/fonts/MontSerrat/MontSerrat-SemiBold.ttf) format("truetype");
+    src: url(./fonts/MontSerrat/MontSerrat-SemiBold.ttf) format("truetype");
   }
 
   html {
