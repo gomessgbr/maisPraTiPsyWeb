@@ -1,15 +1,21 @@
+import {Link} from 'react-router-dom'
+
 export function Header() {
   return (
     <nav className="flex flex-1 items-center justify-between py-7 px-12  bg-black text-primary">
-      <a href="index.html" className="font-alegreyaBold text-5xl ">
+      <Link to='/' className="font-alegreyaBold text-5xl ">
         PsyWeb
-      </a>
+      </Link>
       <ul className="flex gap-8 font-montserratBold">
         <li>
-          <a href="./consult.html" className="hover:text-accent">Encontre um psicologo</a>
+          <Link to='consult' className="hover:text-accent">
+            Encontre um psicologo
+          </Link>
         </li>
         <li>
-          <a href="./contact.html" className="hover:text-accent">Contato</a>
+          <Link to="contact" className="hover:text-accent">
+            Contato
+          </Link>
         </li>
       </ul>
     </nav>
