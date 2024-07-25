@@ -1,31 +1,32 @@
-import { Accordion } from "../../components/Accordion";
+import { Accordion } from "../../components";
 import { useGetTherapyTypes } from "./hooks/useGetTherapyTypes";
+import panelImage from "../../../public/images/panelImage.jpg"
 
 export function Home() {
   const { therapies } = useGetTherapyTypes();
 
-  console.log(therapies);
   return (
     <>
-      <div className="panel">
+      <div className="relative">
         <img
-          src="./assets/images/pexels-wildlittlethingsphoto-708440.jpg"
-          alt=""
+          src={panelImage}
+          alt="amigos sorrindo em um fundo vazios"
+          className="object-cover w-full max-h-[500px]"
         />
-        <div className="panelTextArea">
-          <h1 className="text-6xl font-montserratBold">Terapia Online!</h1>
-          <a href="./consult.html">Marcar uma conversa inicial inicial</a>
+        <div className="grid gap-4 absolute bottom-0 py-8 px-40">
+          <h1 className="text-6xl font-montserratBold text-white">Terapia Online!</h1>
+          <a href="./consult.html" className="bg-primary w-max p-2 rounded-md hover:bg-accent">Marcar uma conversa inicial inicial</a>
         </div>
       </div>
       <main>
-        <div className="therapyArea">
-          <span className="title">Como funciona terapia online ?</span>
+        <div className="grid gap-4 px-80 py-20">
+          <span className="text-4xl font-montserratBold">Como funciona terapia online ?</span>
           <p>
             A terapia online é uma modalidade de atendimento psicológico ou
             psicoterapêutico realizada através de plataformas digitias, como
             videochamadas, chats ou até mesmo trocas de e-mails.
           </p>
-          <span className="title">Primeiros passos</span>
+          <span className="text-4xl font-montserratBold">Primeiros passos</span>
           <p>
             <strong>Escolha do terapeuta e abordagem:</strong>O primeiro passo é
             escolher um terapeuta que ofereça serviços online. Muitos
@@ -42,8 +43,8 @@ export function Home() {
             ambos.
           </p>
         </div>
-        <div className="bg-black grid place-content-center">
-          <span className="font-montserratBold text-4xl text-white">
+        <div className="bg-black grid place-content-center py-20 px-80">
+          <span className="font-montserratBold text-4xl text-white pb-10">
             Tipos de abordagens
           </span>
 
