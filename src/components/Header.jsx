@@ -4,12 +4,12 @@ export function Header() {
       <a href="index.html" className="font-alegreyaBold text-5xl ">
         PsyWeb
       </a>
-      <ul className="flex gap-2 font-montserratBold">
+      <ul className="flex gap-8 font-montserratBold">
         <li>
-          <a href="./consult.html">Encontre um psicologo</a>
+          <a href="./consult.html" className="hover:text-accent">Encontre um psicologo</a>
         </li>
         <li>
-          <a href="./contact.html">Contato</a>
+          <a href="./contact.html" className="hover:text-accent">Contato</a>
         </li>
       </ul>
     </nav>
