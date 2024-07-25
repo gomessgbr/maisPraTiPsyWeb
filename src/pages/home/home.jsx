@@ -1,6 +1,6 @@
 import { Accordion } from "../../components";
 import { useGetTherapyTypes } from "./hooks/useGetTherapyTypes";
-import panelImage from "../../../public/images/panelImage.jpg"
+import panelImage from "/images/panelImage.jpg"
 
 export function Home() {
   const { therapies } = useGetTherapyTypes();
