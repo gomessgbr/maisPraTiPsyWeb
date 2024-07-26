@@ -27,6 +27,14 @@ export function Consult() {
             buscar
           </button>
         </form>
+        <ProfileCard
+          about="Psicóloga com 10 anos de experiência em terapia cognitivo-comportamental, especializada em tratamento de ansiedade e depressão."
+          approach="Abordagem: Terapia Cognitiva-Comportamental"
+          crp="06/123456"
+          name="Ana Silva"
+          phone="(11) 98765-4321"
+          profileImg="./"
+        />
         <ProfileCard />
       </div>
     </>
