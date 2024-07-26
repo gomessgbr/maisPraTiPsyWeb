@@ -6,7 +6,7 @@
       "approach": "Terapia Cognitivo-Comportamental",
       "contact": "(11) 98765-4321",
       "aboutMe": "Psicóloga com 10 anos de experiência em terapia cognitivo-comportamental, especializada em tratamento de ansiedade e depressão.",
-      "profilePicture": "./assets/images/ana-silva.jpg"
+      "profilePicture": "/images/ana-silva.jpg"
     },
     {
       "name": "Carlos Pereira",
@@ -14,7 +14,7 @@
       "approach": "Psicanálise",
       "contact": "(21) 98765-4321",
       "aboutMe": "Psicanalista com 15 anos de prática clínica, focado em terapia de longo prazo para questões de identidade e relacionamentos.",
-      "profilePicture": "./assets/images/carlos-pereira.jpg"
+      "profilePicture": "/images/carlos-pereira.jpg"
     },
     {
       "name": "Beatriz Santos",
@@ -22,7 +22,7 @@
       "approach": "Terapia Humanista",
       "contact": "(31) 98765-4321",
       "aboutMe": "Especialista em terapia humanista, atuando há 8 anos com foco no desenvolvimento pessoal e autoconhecimento.",
-      "profilePicture": "./assets/images/beatriz-santos.jpg"
+      "profilePicture": "/images/beatriz-santos.jpg"
     },
     {
       "name": "João Almeida",
@@ -30,7 +30,7 @@
       "approach": "Terapia Comportamental",
       "contact": "(41) 98765-4321",
       "aboutMe": "Psicólogo comportamental com experiência em tratamento de transtornos alimentares e compulsões, com 12 anos de atuação.",
-      "profilePicture": "./assets/images/joao-almeida.jpg"
+      "profilePicture": "/images/joao-almeida.jpg"
     }
   ]
 }
