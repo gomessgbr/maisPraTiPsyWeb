@@ -14,6 +14,11 @@ export function Header() {
         </li>
         <li>
           <Link to="contact" className="hover:text-accent">
+            Hábitos
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" className="hover:text-accent">
             Contato
           </Link>
         </li>
