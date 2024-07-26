@@ -1,4 +1,4 @@
-import anaJuliaImage from "../../public/images/ana-silva.jpg";
+
 
 export function ProfileCard({ profileImg, about, phone, crp, name, approach }) {
   return (
@@ -7,8 +7,8 @@ export function ProfileCard({ profileImg, about, phone, crp, name, approach }) {
         <div className="grid grid-cols-[auto_1fr] gap-8">
           <img
             className="rounded-full w-[180px] h-[180px] object-cover"
-            src={anaJuliaImage}
-            alt="foto da ana julia"
+            src={profileImg}
+            alt="foto de perfil do profissional psicológo"
           />
 
           <div>
