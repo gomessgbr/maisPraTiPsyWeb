@@ -1,4 +1,5 @@
-import { ProfissionalCard } from "../../components";
+import { ProfileCard } from "../../components";
+
 
 export function Consult() {
   return (
@@ -18,7 +19,7 @@ export function Consult() {
             buscar
           </button>
         </form>
-        <ProfissionalCard/>
+        <ProfileCard/>
       </div>
     </>
   );

@@ -1,4 +1,4 @@
-export function ProfissionalCard(){
+export function ProfileCard(){
   return(
     <div className="shadow-lg">
       <p>Teste</p>
