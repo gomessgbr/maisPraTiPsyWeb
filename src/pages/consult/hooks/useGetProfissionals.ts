@@ -10,7 +10,9 @@ export function useGetProfissionals({ query }) {
       const { psychologyProfessionals } = data;
       const filtredProfissionals = psychologyProfessionals.filter((prof) => {
         if (!!query) {
-          return prof.name.includes(query);
+          const formatedQuery = query.toLowerCase();
+          const formatedName = prof.name.toLowerCase()
+          return formatedName.includes(formatedQuery);
         }
         return prof;
       });
