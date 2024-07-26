@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { ProfileCard } from "../../components";
 import { useGetProfissionals } from "./hooks/useGetProfissionals";
 
 export function Consult() {
-  const { profissionals } = useGetProfissionals();
+  const [query, setQuery] = useState("");
+  const { profissionals } = useGetProfissionals({ query });
+
   return (
     <>
       <div className="containerConsult">
@@ -19,6 +22,7 @@ export function Consult() {
               name=""
               id="searchInput"
               className="max-w-4xl w-full px-2 py-3 rounded-md border-0 shadow-md shadow-black"
+              onChange={(e) => setQuery(e.target.value)}
             />
           </label>
           <button
