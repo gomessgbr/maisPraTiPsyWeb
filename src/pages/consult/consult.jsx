@@ -8,7 +8,7 @@ export function Consult() {
 
   return (
     <>
-      <div className="containerConsult">
+      <div className="min-h-screen">
         <form
           id="searchForm"
           className="max-h-fit bg-primary p-32 flex justify-center gap-2 "
