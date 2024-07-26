@@ -1,6 +1,8 @@
 import { ProfileCard } from "../../components";
+import { useGetProfissionals } from "./hooks/useGetProfissionals";
 
 export function Consult() {
+  const { profissionals } = useGetProfissionals();
   return (
     <>
       <div className="containerConsult">
@@ -27,15 +29,19 @@ export function Consult() {
             buscar
           </button>
         </form>
-        <ProfileCard
-          about="Psicóloga com 10 anos de experiência em terapia cognitivo-comportamental, especializada em tratamento de ansiedade e depressão."
-          approach="Abordagem: Terapia Cognitiva-Comportamental"
-          crp="06/123456"
-          name="Ana Silva"
-          phone="(11) 98765-4321"
-          profileImg="./"
-        />
-        <ProfileCard />
+
+        {profissionals.length > 0 &&
+          profissionals.map((profissional) => (
+            <ProfileCard
+              key={profissional.CRP}
+              about={profissional.aboutMe}
+              approach={profissional.approach}
+              crp={profissional.CRP}
+              name={profissional.name}
+              phone={profissional.contact}
+              profileImg={profissional.profilePicture}
+            />
+          ))}
       </div>
     </>
   );
