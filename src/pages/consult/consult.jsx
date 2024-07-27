@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ProfileCard } from "./components/ProfileCard";
 import { useGetProfissionals } from "./hooks/useGetProfissionals";
 
+
 export function Consult() {
   const [query, setQuery] = useState("");
   const { profissionals } = useGetProfissionals({ query });
