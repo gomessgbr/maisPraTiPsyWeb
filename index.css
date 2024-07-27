@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face{
+    font-family: alegrevaBold;
+    src: url(./fonts/Alegreya/Alegreya-Bold.ttf) format("truetype");
+  }
+
+  @font-face{
+    font-family: alegrevaSemibold;
+    src: url(./fonts/Alegreya/Alegreya-SemiBold.ttf) format("truetype");
+  }
+
+  @font-face{
+    font-family: alegrevaRegular;
+    src: url(./fonts/Alegreya/Alegreya-Regular.ttf) format("truetype");
+  }
+
+  @font-face{
+    font-family: montserratBold;
+    src: url(./fonts/MontSerrat/Montserrat-Bold.ttf) format("truetype");
+  }
+  @font-face{
+    font-family: montserratRegular;
+    src: url(./fonts/MontSerrat/Montserrat-Regular.ttf) format("truetype");
+  }
+  @font-face{
+    font-family: montserratSemibold;
+    src: url(./fonts/MontSerrat/MontSerrat-SemiBold.ttf) format("truetype");
+  }
+
+  html {
+    @apply font-montserrat; /* Define a fonte padrão para o corpo do site */
+  }
+}

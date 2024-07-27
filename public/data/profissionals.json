@@ -1,0 +1,36 @@
+{
+  "psychologyProfessionals": [
+    {
+      "name": "Ana Silva",
+      "CRP": "06/123456",
+      "approach": "Terapia Cognitivo-Comportamental",
+      "contact": "(11) 98765-4321",
+      "aboutMe": "Psicóloga com 10 anos de experiência em terapia cognitivo-comportamental, especializada em tratamento de ansiedade e depressão.",
+      "profilePicture": "/images/ana-silva.jpg"
+    },
+    {
+      "name": "Carlos Pereira",
+      "CRP": "07/654321",
+      "approach": "Psicanálise",
+      "contact": "(21) 98765-4321",
+      "aboutMe": "Psicanalista com 15 anos de prática clínica, focado em terapia de longo prazo para questões de identidade e relacionamentos.",
+      "profilePicture": "/images/carlos-pereira.jpg"
+    },
+    {
+      "name": "Beatriz Santos",
+      "CRP": "05/112233",
+      "approach": "Terapia Humanista",
+      "contact": "(31) 98765-4321",
+      "aboutMe": "Especialista em terapia humanista, atuando há 8 anos com foco no desenvolvimento pessoal e autoconhecimento.",
+      "profilePicture": "/images/beatriz-santos.jpg"
+    },
+    {
+      "name": "João Almeida",
+      "CRP": "08/445566",
+      "approach": "Terapia Comportamental",
+      "contact": "(41) 98765-4321",
+      "aboutMe": "Psicólogo comportamental com experiência em tratamento de transtornos alimentares e compulsões, com 12 anos de atuação.",
+      "profilePicture": "/images/joao-almeida.jpg"
+    }
+  ]
+}

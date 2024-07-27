@@ -1,0 +1,36 @@
+{
+  "therapies": [
+    {
+      "name": "Terapia Cognitivo-Comportamental",
+      "description": "A Terapia Cognitivo-Comportamental (TCC) é uma abordagem focada na modificação de padrões de pensamento disfuncionais que influenciam comportamentos e emoções.Foca na mudança de comportamentos específicos através de técnicas de condicionamento e reforço. "
+    },
+    {
+      "name": "Psicanálise",
+      "description": "Explora os pensamentos e sentimentos inconscientes, muitas vezes relacionando experiências passadas e sua influência no comportamento atual."
+    },
+    {
+      "name": "Terapia Humanista",
+      "description": "A Terapia Humanista se concentra no desenvolvimento do potencial humano e na busca pela auto-realização e autenticidade. Centrada no desenvolvimento pessoal e na realização do potencial humano, enfatizando a empatia e a aceitação incondicional."
+    },
+    {
+      "name": "Terapia Gestalt",
+      "description": "Enfatiza a consciência e a experiência presente, incentivando os clientes a perceber e entender seus sentimentos e comportamentos no momento."
+    },
+    {
+      "name": "Terapia Sistêmica",
+      "description": "Examina as interações dentro de sistemas familiares e sociais, focando nas dinâmicas de relacionamento e comunicação."
+    },
+    {
+      "name": "Terapia de Aceitação e Compromisso (ACT)",
+      "description": "Combina técnicas de mindfulness com estratégias de mudança de comportamento, ajudando os clientes a aceitar seus pensamentos e sentimentos enquanto se comprometem com ações alinhadas com seus valores."
+    },
+    {
+      "name": "Terapia Dialética Comportamental (TDC)",
+      "description": "Uma forma de TCC que inclui técnicas de mindfulness e é usada principalmente para tratar transtornos de personalidade borderline."
+    },
+    {
+      "name": "Terapia Narrativa",
+      "description": "Ajuda os clientes a reescrever suas histórias pessoais, focando em como as narrativas pessoais influenciam a identidade e o comportamento."
+    }
+  ]
+}
