@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { ProfileCard } from "../../components";
+
+import { ProfileCard } from "./components/ProfileCard";
 import { useGetProfissionals } from "./hooks/useGetProfissionals";
 
 export function Consult() {

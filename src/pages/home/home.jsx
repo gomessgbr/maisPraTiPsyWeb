@@ -1,4 +1,4 @@
-import { Accordion } from "../../components";
+import { Accordion } from "./components/Accordion";
 import { useGetTherapyTypes } from "./hooks/useGetTherapyTypes";
 import panelImage from "/images/panelImage.jpg";
 
