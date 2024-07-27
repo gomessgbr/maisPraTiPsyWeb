@@ -1,101 +1,44 @@
-import { useState, useEffect } from "react";
+import { useEffect, useId, useRef } from "react";
+import { useHabits } from "./hooks/useHabits";
+import { HabitsForm } from "./components/HabitsForm";
+import { Plus } from "lucide-react";
 
 export function Habits() {
-  const [habits, setHabits] = useState([]);
-  const [newHabit, setNewHabit] = useState("");
-
-  useEffect(() => {
-    const storedHabits = JSON.parse(localStorage.getItem("habits"));
-    if (storedHabits) {
-      setHabits(storedHabits);
-    }
-  }, []);
+  const id = useId();
+  const inputRef = useRef(null);
+  const { habits, addHabit, deleteHabit, editHabit, toggleHabit } = useHabits();
 
   useEffect(() => {
     localStorage.setItem("habits", JSON.stringify(habits));
   }, [habits]);
 
-  const addHabit = () => {
-    if (newHabit.trim()) {
-      setHabits([...habits, { text: newHabit, completed: false }]);
-      setNewHabit("");
-    }
-  };
-
-  const deleteHabit = (index) => {
-    const newHabits = habits.filter((_, i) => i !== index);
-    setHabits(newHabits);
-  };
-
-  const toggleHabit = (index) => {
-    const newHabits = habits.map((habit, i) => {
-      if (i === index) {
-        return { ...habit, completed: !habit.completed };
-      }
-      return habit;
-    });
-    setHabits(newHabits);
-  };
-
-  const editHabit = (index, newText) => {
-    const newHabits = habits.map((habit, i) => {
-      if (i === index) {
-        return { ...habit, text: newText };
-      }
-      return habit;
-    });
-    setHabits(newHabits);
-  };
-
   return (
-    <div className="p-4">
+    <div className="p-8 min-h-[800px] max-w-max flex flex-col place-items-center mx-auto my-4 border ">
       <h1 className="text-2xl font-montserratBold mb-4">Meus Hábitos</h1>
-      <div className="mb-4">
+      <form
+        id={id}
+        className="md:min-w-[90dvh] mb-4 grid gap-1 grid-cols-[1fr_auto] "
+        onSubmit={addHabit}
+      >
         <input
           type="text"
-          value={newHabit}
-          onChange={(e) => setNewHabit(e.target.value)}
           className="px-2 py-1 border rounded mr-2"
+          ref={inputRef}
         />
-        <button
-          onClick={addHabit}
-          className="bg-primary text-white px-2 py-1 rounded"
-        >
-          Adicionar Hábito
+        <button className="bg-accent text-white px-2 py-1 rounded" form={id}>
+          <Plus />
         </button>
-      </div>
-      <ul>
+      </form>
+      <ul className="min-w-full">
         {habits.map((habit, index) => (
-          <li key={index} className="flex justify-between items-center mb-2">
-            <div>
-              <input
-                type="checkbox"
-                checked={habit.completed}
-                onChange={() => toggleHabit(index)}
-                className="mr-2"
-              />
-              {habit.completed ? <del>{habit.text}</del> : habit.text}
-            </div>
-            <div>
-              <button
-                onClick={() => {
-                  const newText = prompt("Edite seu hábito:", habit.text);
-                  if (newText !== null) {
-                    editHabit(index, newText);
-                  }
-                }}
-                className="bg-blue-500 text-white px-2 py-1 rounded mr-2"
-              >
-                Editar
-              </button>
-              <button
-                onClick={() => deleteHabit(index)}
-                className="bg-red-500 text-white px-2 py-1 rounded"
-              >
-                Excluir
-              </button>
-            </div>
-          </li>
+          <HabitsForm
+            habit={habit}
+            key={`${habit}${index}`}
+            index={index}
+            toggleHabit={toggleHabit}
+            editHabit={editHabit}
+            deleteHabit={deleteHabit}
+          />
         ))}
       </ul>
     </div>
