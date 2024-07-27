@@ -29,7 +29,7 @@ export function Consult() {
           </label>
           <button
             type="submit"
-            className="bg-accent h-12 px-4 py-2 self-end rounded-md font-montserrat hover:bg-black hover:text-primary"
+            className="lg:w-auto w-full bg-accent h-12 px-4 py-2 self-end rounded-md font-montserrat hover:bg-black hover:text-primary"
             form="searchForm"
           >
             buscar
