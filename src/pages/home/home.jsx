@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Accordion } from "./components/Accordion";
 import { useGetTherapyTypes } from "./hooks/useGetTherapyTypes";
 import panelImage from "/images/panelImage.jpg";
@@ -17,12 +18,12 @@ export function Home() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-montserratBold text-white">
             Terapia Online!
           </h1>
-          <a
-            href="./consult.html"
+          <Link
+            to="/consult"
             className="bg-primary w-max p-2 rounded-md hover:bg-accent"
           >
             Marcar uma conversa inicial
-          </a>
+          </Link>
         </div>
       </div>
       <main>
