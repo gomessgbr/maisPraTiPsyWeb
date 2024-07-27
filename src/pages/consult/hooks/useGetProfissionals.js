@@ -9,7 +9,7 @@ export function useGetProfissionals({ query }) {
       const data = await response.json();
       const { psychologyProfessionals } = data;
       const filtredProfissionals = psychologyProfessionals.filter((prof) => {
-        if (!!query) {
+        if (query.trim()) {
           const formatedQuery = query.toLowerCase();
           const formatedName = prof.name.toLowerCase()
           return formatedName.includes(formatedQuery);
