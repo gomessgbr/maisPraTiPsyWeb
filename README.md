@@ -15,13 +15,19 @@ Site desenvolvimento para uso de profisionais de psicologia
 
 ## Build With
 - HTML5
-- CSS3
-- Vanilla(JavaScript)
+- (TailwindCSS)[https://tailwindcss.com/]
+- (React)[https://react.dev/]
+- (React Router DOM)[https://reactrouter.com/en/main]
+- (Vite)[https://v3.vitejs.dev/] 
 
 ## How to build
 
+- Download repository
 ```bash
 $ git clone https://github.com/gomessgbr/maisPraTiPsyWeb.git
+```
+```bash
+$ npm i 
 ```
 
 
