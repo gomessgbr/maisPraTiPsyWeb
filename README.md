@@ -7,17 +7,17 @@ Site desenvolvimento para uso de profisionais de psicologia
  - Busca por nome
  - Informações sobre terapia online
  - Informações sobre o tipo de abordagem do psicologo
-
+ - Controle de hábitos
 
 ## ScreenShots
 
-![preview](./assets/images/preview.png)
+![preview](images/preview.png)
 
 ## Build With
-- HTML5
-- (TailwindCSS)[https://tailwindcss.com/]
 - (React)[https://react.dev/]
+- (TailwindCSS)[https://tailwindcss.com/]
 - (React Router DOM)[https://reactrouter.com/en/main]
+- (Lucide)[https://lucide.dev/]
 - (Vite)[https://v3.vitejs.dev/] 
 
 ## How to build
@@ -26,8 +26,15 @@ Site desenvolvimento para uso de profisionais de psicologia
 ```bash
 $ git clone https://github.com/gomessgbr/maisPraTiPsyWeb.git
 ```
+
+- Install dependencies
 ```bash
 $ npm i 
+```
+
+- Run project
+```bash
+$ npm run dev
 ```
 
 
